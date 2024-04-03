@@ -19,16 +19,16 @@ function restyle() {
 	let r = Math.random() * 255;
 	let g = Math.random() * 255;
 	let b = Math.random() * 255;
-	heading.style.color = "rgb("+r+","+g+","+b+")";
+	output.style.color = "rgb("+r+","+g+","+b+")";
 	//font size
 	let size = 0;
 	while (size < 20){
-		size = Math.floor(Math.random() * 150)
+		size = Math.floor(Math.random() * 100)
 	}
-	heading.style.fontSize = size + "px";
+	output.style.fontSize = size + "px";
 	//font family
 	var font = ["Courier New", "Times New Roman", "Verdana"];
 	let index = Math.floor(Math.random() * 3);
 	let fontFam = font[index];
-	heading.style.fontFamily = fontFam;
+	output.style.fontFamily = fontFam;
 };
